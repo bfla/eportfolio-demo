@@ -1,0 +1,10 @@
+{
+  "public": {
+    "mixpanel": {
+      "token": "REPLACE_ME"
+    }
+  },
+  "private": {
+    
+  }
+}
