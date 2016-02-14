@@ -32,3 +32,4 @@ rwatts:uuid
 twbs:bootstrap@=4.0.0-alpha.2
 fourseven:scss
 mike:mocha
+kadira:react-layout
