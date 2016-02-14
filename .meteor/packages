@@ -18,3 +18,17 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
+coffeescript
+react
+kadira:flow-router
+jhartma:cjsx
+accounts-password
+accounts-facebook
+accounts-google
+aldeed:collection2
+yogiben:mixpanel
+accounts-ui
+rwatts:uuid
+twbs:bootstrap@=4.0.0-alpha.2
+fourseven:scss
+mike:mocha
