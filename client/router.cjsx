@@ -1,8 +1,13 @@
+target = document.getElementById('react-target')
+
 FlowRouter.route('/',
   action: (params) ->
-    target = document.getElementById('react-target')
-    if Meteor.user()
-      ReactDOM.render(<UserPortfolio />, target)
-    else
-      # ReactDOM.render(<Splash />, target)
+    ReactLayout.render(
+      MainLayout, 
+      content: <UserPortfolio />
+    )
 )
+
+# FlowRouter.route('/:username',
+  # action: (params) ->
+# )
