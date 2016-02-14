@@ -1,0 +1,13 @@
+{
+  "public": {
+    "mixpanel": "FOO"
+  },
+  "private": {
+    "mongo": {
+      "main": {
+        "connString": "FOO",
+        "opLogConn": "BAR"
+      }
+    }
+  }
+}
