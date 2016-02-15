@@ -12,6 +12,7 @@ FlowRouter.route('/',
 
 # Create new project
 FlowRouter.route('/projects/create',
+  # triggersEnter: [requiredLogin]
   name: 'createProject'
   action: (params) ->
     ReactLayout.render(
@@ -29,7 +30,6 @@ FlowRouter.route("/projects/:_id",
       content: <ProjectPage projectId={params._id} />
     )
 )
-
 
 # Edit existing project
 # FlowRouter.route("/projects/edit/:id",
