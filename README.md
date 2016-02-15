@@ -3,6 +3,7 @@
 ## Todos
 Before this can be a real app...
 - **Remove autopublish and insecure**
+- Fix issue where uportfolio.meteor.com complains about routes (maybe due to .cjsx?)
 - Group galleries
 - Edit existing projects
 - Public portfolios and Public browsing
