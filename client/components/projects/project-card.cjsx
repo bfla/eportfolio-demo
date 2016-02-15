@@ -10,6 +10,9 @@
   #     subscriptions: subs
   #     project
   #   return data 
+  editProject: (e) ->
+    e.preventDefault()
+    sAlert.error('Sorry, this demo does not support editing.')
 
   renderImg: ->
     return <span></span> unless @props.project.img?.m?
@@ -30,8 +33,10 @@
           <p className='card-text'>{@props.project.descriptionHtml}</p>
         </div>
         <div className='card-block'>
-          <a href="projects/#{@props.project._id}/edit" 
-            className='card-link btn btn-primary-outline btn-sm'>
+          <a href='#' 
+            className='card-link btn btn-primary-outline btn-sm'
+            onClick={@editProject}
+          >
               Edit
           </a>
           <a 

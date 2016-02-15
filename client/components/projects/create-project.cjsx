@@ -11,6 +11,10 @@
       # foo: Foo.find()
     # return data 
   
+  addAttachment: (e) ->
+    e.preventDefault()
+    sAlert.error('Sorry. This demo does not support attachments')
+
   handleSubmit: (e) ->
     e.preventDefault()
     project =
@@ -51,7 +55,7 @@
             <small>Describe what the project was and what you did. </small>
           </fieldset>
           <fieldset className='form-group'>
-            <a href='#' className='btn btn-success-outline'> 
+            <a href='#' className='btn btn-success-outline' onClick={@addAttachment}> 
               Add Attachments 
             </a>
           </fieldset>

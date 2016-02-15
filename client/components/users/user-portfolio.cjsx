@@ -16,7 +16,7 @@
     if @data.user?.profile?.firstName and @data.user?.profile?.lastName
       title = "#{@data.user.profile.firstName} #{@data.user.profile.lastName}"
     else
-      title = "Jon Snow (Sorry, you don't have a name yet)"
+      title = "Jon Snow"
 
   renderGallery: ->
     if @data.projects?.length
