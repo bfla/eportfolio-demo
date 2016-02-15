@@ -15,23 +15,33 @@
     sAlert.error('Sorry, this demo does not support editing.')
 
   renderImg: ->
-    return <span></span> unless @props.project.img?.m?
-    return (
-      <img 
-        className='card-img-top' 
-        alt="#{@props.project.title} image"
-        src={@props.project.img.m}
-      />
-    )
+    if @props.project.img?.m?
+      return (
+        <img 
+          className='card-img-top' 
+          alt="#{@props.project.title} image"
+          src={@props.project.img.m}
+        />
+      )
+    else
+      return (
+        <div className='card-img-top img-project-card-missing'> 
+          <p className='img-project-card-missing-caption'>No image</p>
+        </div>)
 
   render: ->
     return (
       <div className='card project-card'>
         {@renderImg()}
         <div className='card-block'>
-          <h5 className='card-title'>{@props.project.title}</h5>
-          <p className='card-text'>{@props.project.descriptionHtml}</p>
+          <h6 className='card-title'>{@props.project.title}</h6>
+          <p className='card-text'>
+            {@props.project.descriptionHtml}
+            <br/>
+            <small className='text-muted'>updated {@props.project.updatedAt.toDateString()}</small>
+          </p>
         </div>
+        <hr/>
         <div className='card-block'>
           <a href='#' 
             className='card-link btn btn-primary-outline btn-sm'

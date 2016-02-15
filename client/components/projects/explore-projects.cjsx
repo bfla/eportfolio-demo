@@ -14,7 +14,7 @@
   render: ->
     return (
       <div className='explore-projects'>
-        <Heading title='Explore Projects' subtitle='Other projects on uPortfolio' />
+        <Heading title='Explore Projects' subtitle='All projects on uPortfolio' />
         <ProjectGallery projects={@data.projects} />
       </div>
     )
