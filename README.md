@@ -1,6 +1,7 @@
 <img src='https://codeship.com/projects/a19a4bd0-b650-0133-d543-527a54f9b7b1/status?branch=master'/>
 
 ## Remaining requirements
+- Cascading grids
 - Skills map
 
 ## Todos
