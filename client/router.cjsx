@@ -1,4 +1,4 @@
-target = document.getElementById('react-target')
+# target = document.getElementById('react-target')
 
 # Home page
 FlowRouter.route('/',

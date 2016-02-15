@@ -9,7 +9,7 @@
     data =
       subscriptions: subs
       user: Meteor.user()
-    data.projects = Projects.find(userId: Meteor.userId()).fetch() if Projects.findOne(Meteor.userId())
+      projects: Projects.find(userId: Meteor.userId()).fetch()
     return data
 
   title: ->

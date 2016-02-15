@@ -11,10 +11,8 @@
       user: Meteor.user()
     return data
 
-
   getInitialState: -> 
     showSigninForm: false
-    loggedIn: Meteor.user()?
 
   showSigninForm: -> @setState(showSigninForm: true)
 
