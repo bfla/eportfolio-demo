@@ -18,14 +18,10 @@
       descriptionHtml: React.findDOMNode(@refs.description).value
     Projects.insert(project, @handleRes)
     
-  handleRes: (err, res) ->
-    if err?
-      console.log(err)
-      # notify #FIXIT
-    else
-      # mixpanel.track('')
-      # notify #FIXIT
-      FlowRouter.go('/')
+  handleRes: (err) ->
+    return sAlert.error(err.message) if err?
+    FlowRouter.go('/')
+    sAlert.success('Awesome! Your project was saved.')
 
   render: ->
     return (
