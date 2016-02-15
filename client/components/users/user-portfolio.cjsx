@@ -8,7 +8,7 @@
     subs = [Meteor.subscribe('projects')]
     data =
       subscriptions: subs
-      projects: Projects.find().fetch()
+      projects: Projects.find(userId: Meteor.userId()).fetch()
       user: Meteor.user()
     return data
 
