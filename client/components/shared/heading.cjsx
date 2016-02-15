@@ -16,14 +16,14 @@
   render: ->
     return (
       <div className='heading'>
-        <div className='container-fluid'>
-          <h1 className='heading-title text-md-center col-md-12'>
+        <div className='container-fluid text-md-center'>
+          <h1 className='heading-title col-md-12'>
             {@props.title}
             <br/>
-            <small className='heading-subtitle text-center'>
-              {if @props.subtitle? then @props.subtitle else ''}
-            </small>
           </h1>
+          <p className='lead heading-subtitle text-center'>
+            {if @props.subtitle? then @props.subtitle else ''}
+          </p>
         </div>        
       </div>
     )

@@ -19,7 +19,7 @@
             <a href='/' className='nav-link'> uPortfolio </a>
           </li>
           <li className='nav-item'>
-            <a href='#' className='nav-link'> Explore Projects </a>
+            <a href='/explore' className='nav-link'> Explore Projects </a>
           </li>
           <li className='nav-item'>
             <a href='#' className='nav-link'> Your Groups </a>

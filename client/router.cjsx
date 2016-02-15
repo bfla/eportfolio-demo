@@ -1,5 +1,6 @@
 target = document.getElementById('react-target')
 
+# Home page
 FlowRouter.route('/',
   action: (params) ->
     ReactLayout.render(
@@ -8,6 +9,7 @@ FlowRouter.route('/',
     )
 )
 
+# View project
 FlowRouter.route("/projects/:_id",
   action: (params) ->
     ReactLayout.render(
@@ -16,6 +18,7 @@ FlowRouter.route("/projects/:_id",
     )
 )
 
+# Create new project
 FlowRouter.route('/projects/create',
   action: (params) ->
     ReactLayout.render(
@@ -24,6 +27,7 @@ FlowRouter.route('/projects/create',
     )
 )
 
+# Edit existing project
 FlowRouter.route('/projects/edit/:id',
   action: (params) ->
     ReactLayout.render(
@@ -32,6 +36,11 @@ FlowRouter.route('/projects/edit/:id',
     )
 )
 
-# FlowRouter.route('/:username',
-  # action: (params) ->
-# )
+# Explore all projects
+FlowRouter.route('/explore',
+  action: (params) ->
+    ReactLayout.render(
+      MainLayout,
+      content: <ExploreProjects />
+    )
+)
