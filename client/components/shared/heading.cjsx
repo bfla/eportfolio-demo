@@ -16,14 +16,14 @@
   render: ->
     return (
       <div className='heading'>
-        <h1 className='heading-title text-center'>
-          {@props.title}
-          <br/>
-          <small className='heading-subtitle text-center'>
-          </small>
-          }
-        </h1>
-        
+        <div className='container-fluid'>
+          <h1 className='heading-title text-center col-md-12'>
+            {@props.title}
+            <br/>
+            <small className='heading-subtitle text-center'>
+            </small>
+          </h1>
+        </div>        
       </div>
     )
   

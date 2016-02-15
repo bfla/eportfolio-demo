@@ -24,7 +24,7 @@
     return (
       <div>
         <Heading title="#{@data.user.firstName} #{@data.user.lastName}" />
-        <div className='container-fluid'>
+        <div className='container-fluid user-portfolio-works'>
           {@renderProjects()}
         </div>
       </div>
