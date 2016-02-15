@@ -8,6 +8,14 @@ FlowRouter.route('/',
     )
 )
 
+FlowRouter.route("/projects/:_id",
+  action: (params) ->
+    ReactLayout.render(
+      MainLayout,
+      content: <ProjectPage projectId={params._id} />
+    )
+)
+
 FlowRouter.route('/projects/create',
   action: (params) ->
     ReactLayout.render(

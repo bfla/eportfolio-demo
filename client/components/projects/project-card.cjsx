@@ -17,7 +17,7 @@
       <img 
         className='card-img-top' 
         alt="#{@props.project.title} image"
-        src={@props.img.m}
+        src={@props.project.img.m}
       />
     )
 
@@ -30,8 +30,15 @@
           <p className='card-text'>{@props.project.descriptionHtml}</p>
         </div>
         <div className='card-block'>
-          <a href='#' className='card-link btn btn-primary-outline btn-sm'>Edit</a>
-          <a href='#' className='card-link btn btn-primary-outline btn-sm'>View</a>
+          <a href="projects/#{@props.project._id}/edit" 
+            className='card-link btn btn-primary-outline btn-sm'>
+              Edit
+          </a>
+          <a 
+            href="/projects/#{@props.project._id}" 
+            className='card-link btn btn-primary-outline btn-sm'>
+              View
+          </a>
         </div>
       </div>
     )
