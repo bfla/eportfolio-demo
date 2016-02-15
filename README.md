@@ -8,3 +8,6 @@ Before this can be a real app...
 - Needs collaborators
 - View work
 - Needs university administrators
+- Should pull university from email address.
+- User profile should include major/field, career interests, and short personal statement
+- Should allow editing of user profile
