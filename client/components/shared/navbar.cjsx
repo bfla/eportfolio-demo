@@ -16,7 +16,7 @@
       <header className='navbar navbar-light navbar-static-top custom-navbar' role='banner'>
         <ul className='nav navbar-nav'>
           <li className='nav-item'>
-            <a href='/' className='nav-link'> Seelio </a>
+            <a href='/' className='nav-link'> uPortfolio </a>
           </li>
           <li className='nav-item'>
             <a href='#' className='nav-link'> Explore Projects </a>
