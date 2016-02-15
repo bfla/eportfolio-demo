@@ -9,15 +9,6 @@ FlowRouter.route('/',
     )
 )
 
-# View project
-FlowRouter.route("/projects/:_id",
-  action: (params) ->
-    ReactLayout.render(
-      MainLayout,
-      content: <ProjectPage projectId={params._id} />
-    )
-)
-
 # Create new project
 FlowRouter.route('/projects/create',
   action: (params) ->
@@ -27,8 +18,18 @@ FlowRouter.route('/projects/create',
     )
 )
 
+# View project
+FlowRouter.route("/projects/:_id",
+  action: (params) ->
+    ReactLayout.render(
+      MainLayout,
+      content: <ProjectPage projectId={params._id} />
+    )
+)
+
+
 # Edit existing project
-# FlowRouter.route('/projects/edit/:id',
+# FlowRouter.route("/projects/edit/:id",
 #   action: (params) ->
 #     ReactLayout.render(
 #       MainLayout,
