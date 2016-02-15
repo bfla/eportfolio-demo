@@ -10,6 +10,7 @@
       # subscriptions: subs
       # foo: Foo.find()
     # return data 
+  
   handleSubmit: (e) ->
     e.preventDefault()
     project =

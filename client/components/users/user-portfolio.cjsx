@@ -9,13 +9,19 @@
     data =
       subscriptions: subs
       projects: Projects.find().fetch()
-      user: Meteor.user().profile
+      user: Meteor.user()
     return data
+
+  title: ->
+    if @data.user?.profile? 
+      title = "#{@data.user.firstName} #{@data.user.lastName}"
+    else
+      title = "?"
 
   render: ->
     return (
       <div>
-        <Heading title="#{@data.user.firstName} #{@data.user.lastName}" />
+        <Heading title={@title()} />
         <div className='container-fluid user-portfolio-works'>
           <ProjectGallery projects={@data.projects} />
         </div>

@@ -11,3 +11,14 @@ Before this can be a real app...
 - Should pull university from email address.
 - User profile should include major/field, career interests, and short personal statement
 - Should allow editing of user profile
+- Tracking/analytics
+- Emails
+
+## Trickier features (but also important)
+- Attachments (including Soundcloud, Youtube, Videos, etc.)
+- Integrations (LTI, etc)
+
+## Integration points
+- Connect to MongoDB
+- Image processing
+- Connect to auth (Meteor recently added support for external Auth schemes)
