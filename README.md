@@ -1,5 +1,6 @@
 ## Todos
 Before this can be a real app...
+- **Remove autopublish and insecure**
 - Group galleries
 - Edit existing projects
 - Public portfolios and Public browsing
