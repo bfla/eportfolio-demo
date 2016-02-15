@@ -1,5 +1,8 @@
 <img src='https://codeship.com/projects/a19a4bd0-b650-0133-d543-527a54f9b7b1/status?branch=master'/>
 
+## Remaining requirements
+- Skills map
+
 ## Todos
 Before this can be a real app...
 - **Remove autopublish and insecure**
