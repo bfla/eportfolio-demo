@@ -17,7 +17,7 @@
       @setState(showCreateUser: true)
     return sAlert.error(err.message) if err?
     sAlert.warning('Welcome')
-    FlowRouter.go('/')
+    FlowRouter.go('home')
 
   renderCreateNewUser: ->
     return <span></span> unless @state?.showCreateUser

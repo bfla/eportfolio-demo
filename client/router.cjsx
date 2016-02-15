@@ -2,6 +2,7 @@ target = document.getElementById('react-target')
 
 # Home page
 FlowRouter.route('/',
+  name: 'home'
   action: (params) ->
     ReactLayout.render(
       MainLayout, 
@@ -11,6 +12,7 @@ FlowRouter.route('/',
 
 # Create new project
 FlowRouter.route('/projects/create',
+  name: 'createProject'
   action: (params) ->
     ReactLayout.render(
       MainLayout,
@@ -20,6 +22,7 @@ FlowRouter.route('/projects/create',
 
 # View project
 FlowRouter.route("/projects/:_id",
+  name: 'viewProject'
   action: (params) ->
     ReactLayout.render(
       MainLayout,
@@ -39,6 +42,7 @@ FlowRouter.route("/projects/:_id",
 
 # Explore all projects
 FlowRouter.route('/explore',
+  name: 'exploreProjects'
   action: (params) ->
     ReactLayout.render(
       MainLayout,

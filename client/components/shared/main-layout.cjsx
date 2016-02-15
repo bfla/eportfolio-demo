@@ -1,9 +1,20 @@
 @MainLayout = React.createClass
 
+  mixins: [ReactMeteorData]
+
   propTypes:
     content: React.PropTypes.element.isRequired
 
-  getInitialState: -> showSigninForm: false
+  getMeteorData: ->
+    data =
+      # subscriptions: subs
+      user: Meteor.user()
+    return data
+
+
+  getInitialState: -> 
+    showSigninForm: false
+    loggedIn: Meteor.user()?
 
   showSigninForm: -> @setState(showSigninForm: true)
 
@@ -25,7 +36,7 @@
       )
 
   render: ->
-    if Meteor.user()?
+    if @data.user?
       return (
         <div className='main-layout'>
           <Alert />

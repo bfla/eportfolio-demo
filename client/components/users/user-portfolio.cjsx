@@ -13,17 +13,28 @@
     return data
 
   title: ->
-    if @data.user?.profile? 
-      title = "#{@data.user.firstName} #{@data.user.lastName}"
+    if @data.user?.profile?.firstName and @data.user?.profile?.lastName
+      title = "#{@data.user.profile.firstName} #{@data.user.profile.lastName}"
     else
       title = "?"
+
+  renderGallery: ->
+    if @data.projects?.length
+      return (<ProjectGallery projects={@data.projects} />)
+    else
+      return (
+        <div>
+          <p className='lead text-md-center'>You don't have any projects yet.</p>
+          <a href='/projects/create' className='btn btn-success'> Create a Project </a>
+        </div>
+      )
 
   render: ->
     return (
       <div>
         <Heading title={@title()} />
         <div className='container-fluid user-portfolio-works'>
-          <ProjectGallery projects={@data.projects} />
+          {@renderGallery()}
         </div>
       </div>
     )
