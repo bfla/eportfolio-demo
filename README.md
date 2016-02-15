@@ -1,4 +1,4 @@
-https://codeship.com/projects/a19a4bd0-b650-0133-d543-527a54f9b7b1/status?branch=master
+<img src='https://codeship.com/projects/a19a4bd0-b650-0133-d543-527a54f9b7b1/status?branch=master'/>
 
 ## Todos
 Before this can be a real app...
