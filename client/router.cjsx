@@ -28,13 +28,13 @@ FlowRouter.route('/projects/create',
 )
 
 # Edit existing project
-FlowRouter.route('/projects/edit/:id',
-  action: (params) ->
-    ReactLayout.render(
-      MainLayout,
-      content: <EditProject projectId={params._id} />
-    )
-)
+# FlowRouter.route('/projects/edit/:id',
+#   action: (params) ->
+#     ReactLayout.render(
+#       MainLayout,
+#       content: <EditProject projectId={params._id} />
+#     )
+# )
 
 # Explore all projects
 FlowRouter.route('/explore',
