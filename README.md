@@ -1,8 +1,8 @@
 ## Todos
 Before this can be a real app...
+- Group galleries
 - Edit existing projects
-- Public portfolios
-- Group pages
+- Public portfolios and Public browsing
 - Needs public vs private works
 - Needs pagination on the ExploreWorks page
 - Needs collaborators
