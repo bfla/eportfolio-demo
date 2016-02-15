@@ -39,7 +39,7 @@
       return (
         <div className='main-layout splash text-md-center'>
           <Alert />
-          <h1 className='16-splash'> uPortfolio </h1>
+          <h1 className='title-splash'> uPortfolio </h1>
           <p className='lead subtitle-splash'> Share your projects with employers and other students </p>
           {@renderSignin()}
         </div>
