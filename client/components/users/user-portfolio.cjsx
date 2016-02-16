@@ -3,13 +3,15 @@
 
   propTypes:
     projects: React.PropTypes.array
+    userId: React.PropTypes.string
 
   getMeteorData: ->
-    subs = [Meteor.subscribe('projects')]
+    userId = @props.userId || Meteor.userId()
+    # subs = [Meteor.subscribe('projects')]
     data =
-      subscriptions: subs
+      # subscriptions: subs
       user: Meteor.user()
-      projects: Projects.find(userId: Meteor.userId()).fetch()
+      projects: Projects.find(userId: userId).fetch()
     return data
 
   title: ->

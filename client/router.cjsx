@@ -4,9 +4,10 @@
 FlowRouter.route('/',
   name: 'home'
   action: (params) ->
+    userId = params.userId || Meteor.userId()
     ReactLayout.render(
       MainLayout, 
-      content: <UserPortfolio />
+      content: <UserPortfolio userId={userId}/>
     )
 )
 
