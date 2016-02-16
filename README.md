@@ -4,10 +4,9 @@
 - Cascading grids
 - Skills map
 
-## Todos
-Before this can be a real app...
+## Before this can be a real app...
 - **Remove autopublish and insecure**
-- Fix issue where uportfolio.meteor.com complains about routes (maybe due to .cjsx?)
+- Fix issue where uportfolio.meteor.com complains about routes (maybe due to .cjsx compilation?)
 - Group galleries
 - Edit existing projects
 - Public portfolios and Public browsing
