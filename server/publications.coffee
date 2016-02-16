@@ -1,3 +1,3 @@
-Meteor.publish 'projects', (projectId) ->
+Meteor.publish 'projects', ->
     Projects.find() #FIXIT - add privacy rules here
 
