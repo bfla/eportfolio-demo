@@ -11,6 +11,10 @@
       # foo: Foo.find()
     # return data 
 
+  onGroupsClick: (e) ->
+    e.preventDefault()
+    sAlert.error('Groups are not implemented in this demo')
+
   render: ->
     return (
       <header className='navbar navbar-light navbar-static-top custom-navbar' role='banner'>
@@ -22,7 +26,7 @@
             <a href='/explore' className='nav-link'> Explore Projects </a>
           </li>
           <li className='nav-item'>
-            <a href='#' className='nav-link'> Your Groups </a>
+            <a href='#' className='nav-link' onClick={@onGroupsClick}> Your Groups </a>
           </li>
         </ul>
         <ul className='nav navbar-nav pull-md-right'>
