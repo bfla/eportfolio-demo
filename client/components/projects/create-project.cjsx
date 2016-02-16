@@ -32,8 +32,8 @@
     return (
       <div className='create-project container-fluid'>
         <form ref='form' onSubmit={@handleSubmit} className='col-md-6 col-md-offset-3 col-sm-12'>
-          <h1 className='text-md-center'> Create a Project </h1>
-          <fieldset class="form-group">
+          <h2 className='text-md-center text-muted'> Create a Project </h2>
+          <fieldset className='form-group'>
             <label for='workTitle'>Title</label>
             <input 
               id='workTitle' 
@@ -42,7 +42,7 @@
               placeholder='My awesome project' 
               className='form-control'
             ></input>
-            <small>Be descriptive so that people understand what the project was</small>
+            <small className='text-muted'>Be descriptive so that people understand what the project was</small>
           </fieldset>
           <fieldset className='form-group'>
             <label for='workDescription'>Description</label>
@@ -52,7 +52,7 @@
               id='workDescription' 
               placeholder='The goal of this project was...'
               ></textarea>
-            <small>Describe what the project was and what you did. </small>
+            <small className='text-muted'>Describe what the project was and what you did. </small>
           </fieldset>
           <fieldset className='form-group'>
             <a href='#' className='btn btn-success-outline' onClick={@addAttachment}> 
