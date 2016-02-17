@@ -33,7 +33,11 @@
       title = 'Choose a skill'
 
   skillLinks: ->
-    @data.skills.map (skill) => <a href="/skills/#{skill._id}">{skill.name}</a>
+    links = @data.skills.map (skill) => 
+      <a key={skill._id} href="/skills/#{skill._id}">
+        {skill.name}
+      </a>
+    <div>{links}</div>
 
   renderActivities: ->
     return <span></span> unless @props?.skillId?
