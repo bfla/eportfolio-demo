@@ -9,6 +9,7 @@
     _.map projects, (project) ->
       <ProjectCard key={project._id} project={project} />
 
+  # Render cascading grid (stacks vertically)
   divideProjectsIntoColumns: ->
     cols = [[], [], [], []] # 4 columns which will each contain projects
     # Divide projects into correct columns
