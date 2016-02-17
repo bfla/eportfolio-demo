@@ -26,6 +26,9 @@
             <a href='/explore' className='nav-link'> Explore Projects </a>
           </li>
           <li className='nav-item'>
+            <a href='/skills' className='nav-link'> Develop Skills </a>
+          </li>
+          <li className='nav-item'>
             <a href='#' className='nav-link' onClick={@onGroupsClick}> Your Groups </a>
           </li>
         </ul>
