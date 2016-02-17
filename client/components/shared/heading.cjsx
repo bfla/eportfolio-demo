@@ -5,6 +5,7 @@
     title: React.PropTypes.string
     subtitle: React.PropTypes.string
     image: React.PropTypes.object
+    extraContent: React.PropTypes.element
 
   # getMeteorData: ->
     # subs = [Meteor.subscribe('foo')]
@@ -24,6 +25,7 @@
           <p className='lead heading-subtitle text-center'>
             {if @props.subtitle? then @props.subtitle else ''}
           </p>
+          {@props.extraContent}
         </div>        
       </div>
     )
