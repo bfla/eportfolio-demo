@@ -3,8 +3,6 @@
 _schema = new SimpleSchema
   skillId:
     type: String
-  name:
-    type: String
   description:
     type: String
   createdAt:
