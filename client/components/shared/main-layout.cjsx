@@ -44,6 +44,14 @@
           </main>
         </div>
       )
+    else if Meteor.loggingIn()
+      <div className='main-layout'>
+        <Alert />
+        <Navbar />
+        <main className='main-layout-content'>
+          <SpinnerView />
+        </main>
+      </div> 
     else
       return (
         <div className='main-layout splash text-md-center'>

@@ -12,6 +12,9 @@
   #     subscriptions: subs
   #   return data 
 
+  attachProject: ->
+    sAlert.error('Attaching projects to skills is not available in this demo.')
+
   render: ->
     if @props?.workSkill
       <div className='card activities-card text-md-center'>
@@ -28,7 +31,7 @@
         <div className='card-block'>
           <p className='card-text'>{@props.activity.description}</p>
           <hr/>
-          <a href='#' className='btn btn-success-outline'> Attach Project </a>
+          <a href='#' className='btn btn-success-outline' onClick={@attachProject}> Attach Project </a>
         </div>
       </div>
   

@@ -7,4 +7,4 @@ Meteor.publish 'skillsets', -> Skillsets.find()
 
 Meteor.publish 'activities', -> Activities.find()
 
-Meteor.publish 'workSkills', -> WorkSkills.find(userId: Meteor.userId())
+Meteor.publish 'workSkills', -> WorkSkills.find(userId: @userId)
