@@ -50,3 +50,22 @@ FlowRouter.route('/explore',
       content: <ExploreProjects />
     )
 )
+
+# Skills page
+FlowRouter.route('/skills',
+  name: 'skills'
+  action: (params) ->
+    ReactLayout.render(
+      MainLayout,
+      content: <SkillsPage />
+    )
+)
+# Skills page for particular skill
+FlowRouter.route('/skills/:_id',
+  name: 'skills'
+  action: (params) ->
+    ReactLayout.render(
+      MainLayout,
+      content: <SkillsPage skillId={params._id} />
+    )
+)
